@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AR Cooling Solutions provides professional AC installation, repair, maintenance and cleaning for homes and businesses in Hyderabad, Telangana.">
+  <meta name="theme-color" content="#101b2b">
+  <title>AR Cooling Solutions | Premium AC Services in Hyderabad</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #101b2b;
+      --navy-light: #19283b;
+      --gold: #c8a96b;
+      --gold-light: #e2cb9e;
+      --white: #ffffff;
+      --cream: #f7f5f0;
+      --text: #253143;
+      --muted: #727b87;
+      --border: #e9e5dc;
+      --shadow: 0 18px 50px rgba(16, 27, 43, 0.09);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: "Manrope", sans-serif;
+      line-height: 1.2;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .container {
+      width: min(1160px, 90%);
+      margin: auto;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .section-heading {
+      max-width: 680px;
+      margin-bottom: 45px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(30px, 4vw, 43px);
+      color: var(--navy);
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 23px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .3px;
+      border: 1px solid transparent;
+      transition: .3s ease;
+      cursor: pointer;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-gold:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      color: var(--white);
+      border-color: rgba(255,255,255,.55);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--navy);
+    }
+
+    /* Header */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(16, 27, 43, .97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .navbar {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white);
+    }
+
+    .brand-mark {
+      width: 43px;
+      height: 43px;
+      border: 1px solid var(--gold);
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      font-family: "Manrope", sans-serif;
+      font-weight: 800;
+      font-size: 17px;
+      letter-spacing: -1px;
+    }
+
+    .brand-name {
+      font-family: "Manrope", sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+    }
+
+    .brand-sub {
+      display: block;
+      font-size: 9px;
+      color: var(--gold-light);
+      letter-spacing: 2.5px;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #e0e5eb;
+      font-size: 12px;
+      font-weight: 600;
+      transition: .2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 0;
+      color: white;
+      font-size: 27px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+
+    .hero {
+      position: relative;
+      min-height: 680px;
+      display: flex;
+      align-items: center;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(10,19,32,.96) 0%, rgba(10,19,32,.83) 46%, rgba(10,19,32,.25) 100%),
+        url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85") center/cover;
+    }
+
+    .hero-content {
+      max-width: 720px;
+      padding: 100px 0;
+    }
+
+    .hero .eyebrow {
+      color: var(--gold-light);
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6.3vw, 72px);
+      font-weight: 700;
+      letter-spacing: -2.5px;
+      margin-bottom: 23px;
+    }
+
+    .hero h1 span {
+      color: var(--gold-light);
+    }
+
+    .hero p {
+      max-width: 570px;
+      color: #d8dee6;
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .hero-note {
+      margin-top: 65px;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      color: #d9e0e8;
+      font-size: 12px;
+      letter-spacing: .5px;
+    }
+
+    .hero-note::before {
+      content: "";
+      width: 35px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    /* Trust strip */
+
+    .trust-strip {
+      background: var(--navy);
+      color: white;
+      padding: 27px 0;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      text-align: center;
+    }
+
+    .trust-item {
+      padding: 5px 15px;
+      border-right: 1px solid rgba(255,255,255,.15);
+    }
+
+    .trust-item:last-child {
+      border-right: 0;
+    }
+
+    .trust-item strong {
+      display: block;
+      color: var(--gold-light);
+      font-family: "Manrope", sans-serif;
+      font-size: 15px;
+      margin-bottom: 3px;
+    }
+
+    .trust-item span {
+      color: #b8c1cd;
+      font-size: 12px;
+    }
+
+    /* About */
+
+    .about {
+      padding: 110px 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 75px;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+      padding: 0 25px 25px 0;
+    }
+
+    .about-image img {
+      height: 470px;
+      object-fit: cover;
+    }
+
+    .about-image::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 65%;
+      height: 65%;
+      border: 2px solid var(--gold);
+      z-index: -1;
+    }
+
+    .about-copy h2 {
+      color: var(--navy);
+      font-size: clamp(31px, 4vw, 43px);
+      margin-bottom: 22px;
+    }
+
+    .about-copy p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 17px;
+    }
+
+    .about-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 28px;
+    }
+
+    .about-point {
+      border-left: 2px solid var(--gold);
+      padding-left: 13px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    /* Services */
+
+    .services {
+      padding: 105px 0;
+      background: var(--cream);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: white;
+      border: 1px solid var(--border);
+      transition: .3s ease;
+      overflow: hidden;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+    }
+
+    .service-card img {
+      height: 205px;
+      transition: .5s;
+    }
+
+    .service-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .service-content {
+      padding: 25px;
+    }
+
+    .service-number {
+      color: var(--gold);
+      font-family: "Manrope", sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .service-content h3 {
+      font-size: 19px;
+      color: var(--navy);
+      margin: 10px 0;
+    }
+
+    .service-content p {
+      color: var(--muted);
+      font-size: 13px;
+      min-height: 65px;
+    }
+
+    .service-link {
+      display: inline-block;
+      color: #98783e;
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: 16px;
+    }
+
+    /* Residential and commercial */
+
+    .solutions {
+      padding: 105px 0;
+    }
+
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .solution-card {
+      min-height: 430px;
+      position: relative;
+      display: flex;
+      align-items: end;
+      overflow: hidden;
+      color: white;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .solution-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(9,18,31,.96), rgba(9,18,31,.05) 85%);
+      transition: .3s;
+    }
+
+    .solution-card:hover::before {
+      background: linear-gradient(0deg, rgba(9,18,31,.98), rgba(9,18,31,.18));
+    }
+
+    .residential {
+      background-image: url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1100&q=85");
+    }
+
+    .commercial {
+      background-image: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1100&q=85");
+    }
+
+    .solution-content {
+      position: relative;
+      z-index: 1;
+      padding: 38px;
+    }
+
+    .solution-content .eyebrow {
+      color: var(--gold-light);
+    }
+
+    .solution-content h3 {
+      font-size: 29px;
+      margin-bottom: 13px;
+    }
+
+    .solution-content p {
+      color: #d7dce4;
+      font-size: 14px;
+      max-width: 410px;
+      margin-bottom: 20px;
+    }
+
+    /* Why us */
+
+    .why-us {
+      padding: 100px 0;
+      background: var(--navy);
+      color: white;
+    }
+
+    .why-us .section-heading h2 {
+      color: white;
+    }
+
+    .why-us .section-heading p {
+      color: #b9c3cf;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+    }
+
+    .why-card {
+      border-top: 1px solid rgba(255,255,255,.2);
+      padding-top: 25px;
+    }
+
+    .why-icon {
+      color: var(--gold-light);
+      font-size: 26px;
+      margin-bottom: 18px;
+    }
+
+    .why-card h3 {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .why-card p {
+      color: #b9c3cf;
+      font-size: 13px;
+    }
+
+    /* Process */
+
+    .process {
+      padding: 100px 0;
+      background: var(--cream);
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+    }
+
+    .process-step {
+      background: white;
+      padding: 30px;
+      border: 1px solid var(--border);
+    }
+
+    .step-number {
+      color: var(--gold);
+      font-family: "Manrope", sans-serif;
+      font-size: 35px;
+      font-weight: 800;
+    }
+
+    .process-step h3 {
+      color: var(--navy);
+      font-size: 18px;
+      margin: 12px 0;
+    }
+
+    .process-step p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Contact banner */
+
+    .contact-banner {
+      padding: 90px 0;
+      background:
+        linear-gradient(90deg, rgba(16,27,43,.96), rgba(16,27,43,.84)),
+        url("https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=85") center/cover;
+      color: white;
+      text-align: center;
+    }
+
+    .contact-banner h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      margin-bottom: 17px;
+    }
+
+    .contact-banner p {
+      color: #c6ced8;
+      max-width: 620px;
+      margin: 0 auto 28px;
+      font-size: 15px;
+    }
+
+    /* Contact */
+
+    .contact {
+      padding: 100px 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 65px;
+    }
+
+    .contact-info h2 {
+      color: var(--navy);
+      font-size: 36px;
+      margin-bottom: 17px;
+    }
+
+    .contact-info > p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+      margin-bottom: 23px;
+    }
+
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      background: var(--cream);
+      color: #98783e;
+      font-size: 17px;
+    }
+
+    .contact-detail strong {
+      display: block;
+      color: var(--navy);
+      font-size: 13px;
+    }
+
+    .contact-detail span,
+    .contact-detail a {
+      color: var(--muted);
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-panel {
+      padding: 38px;
+      background: var(--cream);
+      border: 1px solid var(--border);
+    }
+
+    .contact-panel h3 {
+      color: var(--navy);
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    .contact-panel p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .contact-panel .btn {
+      margin-top: 5px;
+    }
+
+    /* Footer */
+
+    footer {
+      background: #0a1421;
+      color: white;
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 55px;
+      padding-bottom: 40px;
+    }
+
+    .footer-about p {
+      color: #aeb8c5;
+      font-size: 13px;
+      max-width: 330px;
+      margin-top: 18px;
+    }
+
+    footer h4 {
+      color: var(--gold-light);
+      font-size: 14px;
+      margin-bottom: 17px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a,
+    .footer-links span {
+      color: #aeb8c5;
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-bottom {
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      color: #8f9baa;
+      font-size: 11px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 900px) {
+      .nav-links {
+        gap: 15px;
+      }
+
+      .nav-links a {
+        font-size: 11px;
+      }
+
+      .about-grid {
+        gap: 40px;
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .navbar {
+        min-height: 72px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: var(--navy);
+        padding: 20px 5% 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 19px;
+        border-top: 1px solid rgba(255,255,255,.1);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hero {
+        min-height: 610px;
+        background-position: 60% center;
+      }
+
+      .hero-content {
+        padding: 75px 0;
+      }
+
+      .hero h1 {
+        letter-spacing: -1.5px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .hero-note {
+        margin-top: 42px;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .trust-item {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255,255,255,.13);
+        padding-bottom: 15px;
+      }
+
+      .trust-item:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .about,
+      .services,
+      .solutions,
+      .why-us,
+      .process,
+      .contact {
+        padding: 75px 0;
+      }
+
+      .about-grid,
+      .solutions-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .about-image img {
+        height: 340px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card img {
+        height: 230px;
+      }
+
+      .solution-card {
+        min-height: 370px;
+      }
+
+      .why-grid,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-panel {
+        padding: 27px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *, *::before, *::after {
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <a href="#home" class="brand">
+        <div class="brand-mark">AR</div>
+        <div>
+          <div class="brand-name">AR COOLING</div>
+          <span class="brand-sub">SOLUTIONS</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="eyebrow">Comfort. Quality. Reliability.</div>
+
+          <h1>Experience a New Standard of <span>Cooling Comfort.</span></h1>
+
+          <p>
+            Professional air conditioning solutions for modern homes and
+            businesses. From installation to maintenance, we help keep your
+            spaces comfortable throughout the year.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-gold">ENQUIRE NOW ↗</a>
+            <a href="#services" class="btn btn-outline">EXPLORE SERVICES</a>
+            <a href="tel:+919182337044" class="btn btn-outline">CALL NOW: 9182337044</a>
+          </div>
+
+          <div class="hero-note">Residential & Commercial AC Services · Hyderabad</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <strong>Residential Cooling</strong>
+          <span>Comfort for your home</span>
+        </div>
+        <div class="trust-item">
+          <strong>Commercial Cooling</strong>
+          <span>Solutions for business spaces</span>
+        </div>
+        <div class="trust-item">
+          <strong>Complete AC Care</strong>
+          <span>Installation, repair and maintenance</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"
+            alt="Modern and comfortable interior"
+            loading="lazy">
+        </div>
+
+        <div class="about-copy">
+          <div class="eyebrow">About AR Cooling Solutions</div>
+          <h2>Comfort Is Not a Luxury. It Is a Standard.</h2>
+
+          <p>
+            AR Cooling Solutions is focused on delivering practical air
+            conditioning services for residential and commercial spaces
+            in Hyderabad, Telangana.
+          </p>
+
+          <p>
+            We provide AC installation, repair, cleaning and maintenance
+            services with an emphasis on customer communication, careful
+            work and dependable cooling solutions.
+          </p>
+
+          <div class="about-points">
+            <div class="about-point">Home AC Solutions</div>
+            <div class="about-point">Commercial AC Services</div>
+            <div class="about-point">Installation & Repair</div>
+            <div class="about-point">Cleaning & Maintenance</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">What We Do</div>
+          <h2>Complete Air Conditioning Care</h2>
+          <p>
+            From a new AC installation to routine servicing, explore our
+            range of air conditioning services for homes and businesses.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1631545806609-8f4e6f9a3f47?auto=format&fit=crop&w=800&q=85"
+              alt="Air conditioning unit"
+              loading="lazy">
+            <div class="service-content">
+              <span class="service-number">01 / INSTALLATION</span>
+              <h3>AC Installation</h3>
+              <p>Professional installation support for air conditioning systems in homes and commercial spaces.</p>
+              <a href="#contact" class="service-link">ENQUIRE ABOUT SERVICE ↗</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=85"
+              alt="Technical maintenance work"
+              loading="lazy">
+            <div class="service-content">
+              <span class="service-number">02 / REPAIR</span>
+              <h3>AC Repair</h3>
+              <p>Assistance with AC performance issues, cooling problems and repair requirements.</p>
+              <a href="#contact" class="service-link">ENQUIRE ABOUT SERVICE ↗</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=85"
+              alt="Technical inspection"
+              loading="lazy">
+            <div class="service-content">
+              <span class="service-number">03 / MAINTENANCE</span>
+              <h3>AC Maintenance</h3>
+              <p>Routine maintenance support to help your air conditioning system operate efficiently.</p>
+              <a href="#contact" class="service-link">ENQUIRE ABOUT SERVICE ↗</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=85"
+              alt="Professional cleaning service"
+              loading="lazy">
+            <div class="service-content">
+              <span class="service-number">04 / CLEANING</span>
+              <h3>AC Cleaning</h3>
+              <p>Cleaning services to help maintain your AC unit and support better indoor comfort.</p>
+              <a href="#contact" class="service-link">ENQUIRE ABOUT SERVICE ↗</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=85"
+              alt="Modern commercial office"
+              loading="lazy">
+            <div class="service-content">
+              <span class="service-number">05 / COMMERCIAL</span>
+              <h3>Commercial AC</h3>
+              <p>Air conditioning services for offices, shops, workplaces and other business environments.</p>
+              <a href="#contact" class="service-link">ENQUIRE ABOUT SERVICE ↗</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=85"
+              alt="Modern residential living space"
+              loading="lazy">
+            <div class="service-content">
+              <span class="service-number">06 / RESIDENTIAL</span>
+              <h3>Residential AC</h3>
+              <p>Cooling services designed for apartments, independent houses and family homes.</p>
+              <a href="#contact" class="service-link">ENQUIRE ABOUT SERVICE ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS -->
+    <section class="solutions" id="solutions">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Our Solutions</div>
+          <h2>Designed Around Your Space</h2>
+          <p>
+            Different spaces have different cooling needs. We serve both
+            residential customers and commercial establishments.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+
+          <article class="solution-card residential">
+            <div class="solution-content">
+              <div class="eyebrow">For Your Home</div>
+              <h3>Residential Cooling</h3>
+              <p>
+                Comfortable cooling solutions for apartments, villas
+                and independent homes.
+              </p>
+              <a href="#contact" class="btn btn-gold">DISCUSS YOUR REQUIREMENT ↗</a>
+            </div>
+          </article>
+
+          <article class="solution-card commercial">
+            <div class="solution-content">
+              <div class="eyebrow">For Your Business</div>
+              <h3>Commercial Cooling</h3>
+              <p>
+                AC installation and service support for offices,
+                retail stores and business spaces.
+              </p>
+              <a href="#contact" class="btn btn-gold">DISCUSS YOUR REQUIREMENT ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-us">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Why Choose Us</div>
+          <h2>Thoughtful Service. Dependable Comfort.</h2>
+          <p>
+            We believe good service starts with understanding the customer's
+            needs and recommending the right solution.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon">◇</div>
+            <h3>Customer Focus</h3>
+            <p>We listen to your requirements and help identify a suitable service.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon">⌘</div>
+            <h3>Complete AC Care</h3>
+            <p>Installation, repair, cleaning and maintenance under one service brand.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon">⌂</div>
+            <h3>Home & Business</h3>
+            <p>Services for residential properties as well as commercial environments.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon">✧</div>
+            <h3>Clear Communication</h3>
+            <p>We aim to keep customers informed about their service requirements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">How It Works</div>
+          <h2>Getting Started Is Simple</h2>
+          <p>Tell us what you need, and our team can discuss the next steps with you.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-number">01</div>
+            <h3>Share Your Requirement</h3>
+            <p>Contact us and tell us about your AC issue, installation or service needs.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">02</div>
+            <h3>Discuss the Solution</h3>
+            <p>We discuss your requirement and the suitable service options.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">03</div>
+            <h3>Arrange Your Service</h3>
+            <p>Coordinate the service details and next steps with our team.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="contact-banner">
+      <div class="container">
+        <div class="eyebrow">Let's Make Your Space Comfortable</div>
+        <h2>Looking for Reliable AC Services?</h2>
+        <p>
+          Whether it is your home or business, get in touch with AR Cooling
+          Solutions to discuss your air conditioning requirements.
+        </p>
+        <a href="mailto:arcooling01@gmail.com?subject=AC%20Service%20Enquiry" class="btn btn-gold">
+          SEND AN ENQUIRY ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-info">
+          <div class="eyebrow">Get In Touch</div>
+          <h2>Let's Talk About Your Cooling Needs.</h2>
+          <p>
+            Have a question or need an AC service? Contact us using the
+            details below. We look forward to hearing from you.
+          </p>
+
+          <div class="contact-detail">
+            <div class="contact-icon">☎</div>
+            <div>
+              <strong>Call Us</strong>
+              <a href="tel:+919182337044">+91 9182337044</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon">✉</div>
+            <div>
+              <strong>Email Address</strong>
+              <a href="mailto:arcooling01@gmail.com">arcooling01@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon">⌖</div>
+            <div>
+              <strong>Service Location</strong>
+              <span>Hyderabad, Telangana, India</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="contact-panel">
+          <div class="eyebrow">Contact AR Cooling Solutions</div>
+          <h3>Tell Us What You Need.</h3>
+          <p>
+            For AC installation, repair, cleaning or maintenance enquiries,
+            send us an email with your name, location and service requirement.
+          </p>
+
+          <a
+            href="mailto:arcooling01@gmail.com?subject=AR%20Cooling%20Solutions%20Enquiry&body=Hello%20AR%20Cooling%20Solutions%2C%0A%0AMy%20name%3A%0ALocation%3A%0AService%20required%3A%0ADetails%3A%0A"
+            class="btn btn-gold">
+            EMAIL US YOUR ENQUIRY ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-about">
+          <a href="#home" class="brand">
+            <div class="brand-mark">AR</div>
+            <div>
+              <div class="brand-name">AR COOLING</div>
+              <span class="brand-sub">SOLUTIONS</span>
+            </div>
+          </a>
+
+          <p>
+            Professional air conditioning services for residential
+            and commercial spaces in Hyderabad, Telangana.
+          </p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#solutions">Our Solutions</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact Details</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+919182337044">+91 9182337044</a></li>
+            <li><a href="mailto:arcooling01@gmail.com">arcooling01@gmail.com</a></li>
+            <li><span>Hyderabad, Telangana</span></li>
+            <li><span>India</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> AR Cooling Solutions. All rights reserved.</span>
+        <span>Comfort. Quality. Reliability.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+      menuToggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
